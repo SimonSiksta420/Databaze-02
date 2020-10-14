@@ -32,8 +32,14 @@ create table garages(
 id_garage int not null auto_increment, /* auto_increment zařazuje automaticky do tabulky*/ /* not_null nemusí se vypisovat číslo uděla automaticky pomocí prvního příkazu */
 color varchar(255),
 adress varchar(255),
+email varchar(255),
+telephone int,
 primary key (id_garage) /* primary key zakazuje duplikáty */
 );
 
 insert into garages (color, adress) /* specifikování barvy a adresy */
 values ('červená', 'někde někdy 666');
+
+alter table employees
+auto_increment = id_employee,
+add primary key (id_employee);
