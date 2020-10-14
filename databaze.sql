@@ -28,6 +28,8 @@ from employees /* vypsání vše co je v tabulce */
 
 drop table garages;
 
+/* 14.10.2020 */
+
 create table garages(
 id_garage int not null auto_increment, /* auto_increment zařazuje automaticky do tabulky*/ /* not_null nemusí se vypisovat číslo uděla automaticky pomocí prvního příkazu */
 adress varchar(255),
