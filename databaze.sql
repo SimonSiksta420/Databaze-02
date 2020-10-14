@@ -30,15 +30,16 @@ drop table garages;
 
 create table garages(
 id_garage int not null auto_increment, /* auto_increment zařazuje automaticky do tabulky*/ /* not_null nemusí se vypisovat číslo uděla automaticky pomocí prvního příkazu */
-color varchar(255),
 adress varchar(255),
 email varchar(255),
 telephone int,
+car VARCHAR(255),
+
 primary key (id_garage) /* primary key zakazuje duplikáty */
 );
 
-insert into garages (color, adress) /* specifikování barvy a adresy */
-values ('červená', 'někde někdy 666');
+insert into garages (adress, email, telephone, car,) /* specifikování auta a adresy a dalších věcí */
+values ('někde někdy 666', 'adress@adress.cz', '666 666 666', 'Ford Mustang');
 
 alter table employees
 auto_increment = id_employee,
