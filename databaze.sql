@@ -47,3 +47,12 @@ VALUES (null, 'Prčice', 'adress@adress.cz', '666666666', 'Ford Mustang'
 ); /* specifikování auta a adresy a dalších věcí */
  
 ALTER TABLE employees MODIFY COLUMN id_employee INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+
+/* 4.11 2020 */
+
+ALTER TABLE employees
+ADD id_car int;
+
+UPDATE employees
+SET id_car = 1
+WHERE id_employee = 1;
