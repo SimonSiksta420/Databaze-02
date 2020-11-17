@@ -56,3 +56,14 @@ ADD id_car int;
 UPDATE employees
 SET id_car = 1
 WHERE id_employee = 1;
+
+/* 17.11.2020 */
+
+SELECT COUNT(*) AS pocet_aut
+FROM vehicles;
+
+SELECT COUNT(*) AS slaves
+FROM employees;
+
+SELECT COUNT(*) AS smelly_garage
+FROM garages;
