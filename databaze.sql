@@ -67,3 +67,28 @@ FROM employees;
 
 SELECT COUNT(*) AS smelly_garage
 FROM garages;
+
+/* 25.11.2020 */
+
+CREATE DATABASE `covid_meter` COLLATE 'utf8_bin';
+
+CREATE TABLE countries (
+  id_country int AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  zkratka varchar(10) NOT NULL,
+  description text,
+  PRIMARY KEY (id_country)
+);
+
+INSERT INTO countries (
+  name,
+  shortcut,
+  description
+)
+VALUES (
+  'Ethiopia',
+  'ETH',
+  NULL
+);
+
+
