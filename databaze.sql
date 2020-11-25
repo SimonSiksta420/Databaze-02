@@ -80,15 +80,24 @@ CREATE TABLE countries (
   PRIMARY KEY (id_country)
 );
 
-INSERT INTO countries (
-  name,
-  shortcut,
-  description
-)
-VALUES (
-  'Ethiopia',
-  'ETH',
-  NULL
-);
-
-
+INSERT INTO `countries` (`id_country`, `name`, `code`, `description`) VALUES
+(1,	'Poland',	'PL',	NULL),
+(2,	'Czech Republic',	'CZ',	NULL),
+(3,	'Columbia',	'COL',	NULL),
+(4,	'Brazil',	'BRA',	NULL),
+(5,	'Croatia',	'HR',	NULL),
+(6,	'France',	'FRA',	NULL),
+(7,	'Estonia',	'EST',	NULL),
+(8,	'Finland',	'FIN',	NULL),
+(9,	'Germany',	'DEU',	NULL),
+(10,	'New Zealand',	'NZL',	NULL),
+(11,	'Pakistan',	'PAK',	NULL),
+(12,	'Ethiopia',	'ETH',	NULL),
+(13,	'Great Britain',	'GBR',	NULL),
+(14,	'Central African Republic',	'CAF',	NULL),
+(15,	'Serbia',	'SRB',	NULL),
+(16,	'Switzerland',	'CHE',	NULL),
+(17,	'Thailand',	'THA',	NULL),
+(18,	'Turkey',	'TUR',	NULL),
+(19,	'Christmas Island',	'CXR',	NULL),
+(20,	'Queen Maud Land',	'ATN',	NULL);
