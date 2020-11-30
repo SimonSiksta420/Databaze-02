@@ -110,4 +110,12 @@ add column deaths_total int
 
 UPDATE countries
 SET deaths_total = 9000
+WHERE id_country = 1;
+
+UPDATE countries
+SET deaths_total = 9000
 WHERE id_country = 2;
+
+UPDATE countries
+SET deaths_total = 9000
+WHERE id_country = 3;
