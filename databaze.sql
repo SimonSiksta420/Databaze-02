@@ -113,9 +113,31 @@ SET deaths_total = 9000
 WHERE id_country = 1;
 
 UPDATE countries
-SET deaths_total = 9000
+SET deaths_total = 10000
 WHERE id_country = 2;
 
 UPDATE countries
-SET deaths_total = 9000
+SET deaths_total = 11000
 WHERE id_country = 3;
+
+INSERT INTO `countries` (`id_country`, `name`, `code`, `description`, `deaths_total`) VALUES
+(1,	'Poland',	'PL',	NULL,	5565),
+(2,	'Czech Republic',	'CZ',	NULL,	9012),
+(3,	'Columbia',	'COL',	NULL,	6047),
+(4,	'Brazil',	'BRA',	NULL,	2085),
+(5,	'Croatia',	'HR',	NULL,	1005),
+(6,	'France',	'FRA',	NULL,	1544),
+(7,	'Estonia',	'EST',	NULL,	9700),
+(8,	'Finland',	'FIN',	NULL,	4568),
+(9,	'Germany',	'DEU',	NULL,	2568),
+(10,	'New Zealand',	'NZL',	NULL,	7456),
+(11,	'Pakistan',	'PAK',	NULL,	4122),
+(12,	'Ethiopia',	'ETH',	NULL,	7458),
+(13,	'Great Britain',	'GBR',	NULL,	7412),
+(14,	'Central African Republic',	'CAF',	NULL,	9854),
+(15,	'Serbia',	'SRB',	NULL,	7452),
+(16,	'Switzerland',	'CHE',	NULL,	7412),
+(17,	'Thailand',	'THA',	NULL,	8954),
+(18,	'Turkey',	'TUR',	NULL,	4741),
+(19,	'Christmas Island',	'CXR',	NULL,	9865),
+(20,	'Queen Maud Land',	'ATN',	NULL,	2548);
