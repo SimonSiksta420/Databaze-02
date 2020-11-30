@@ -101,3 +101,13 @@ INSERT INTO `countries` (`id_country`, `name`, `code`, `description`) VALUES
 (18,	'Turkey',	'TUR',	NULL),
 (19,	'Christmas Island',	'CXR',	NULL),
 (20,	'Queen Maud Land',	'ATN',	NULL);
+
+
+/* 30.11.2020 */
+
+ALTER TABLE countries
+add column deaths_total int
+
+UPDATE countries
+SET deaths_total = 9000
+WHERE id_country = 2;
