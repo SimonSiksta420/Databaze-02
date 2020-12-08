@@ -141,3 +141,29 @@ INSERT INTO `countries` (`id_country`, `name`, `code`, `description`, `deaths_to
 (18,	'Turkey',	'TUR',	NULL,	4741),
 (19,	'Christmas Island',	'CXR',	NULL,	9865),
 (20,	'Queen Maud Land',	'ATN',	NULL,	2548);
+
+/* 08.12.2020 */
+
+SELECT *
+FROM countries
+WHERE deaths_total > 4000;
+
+SELECT *
+FROM countries
+WHERE deaths_total > 1000 AND deaths_total < 6000;
+
+SELECT *
+FROM countries
+WHERE deaths_total < 1000;
+
+SELECT *
+FROM countries
+ORDER BY code ASC;
+
+SELECT *
+FROM countries
+ORDER BY deaths_total DESC;
+
+SELECT *
+FROM countries
+WHERE deaths_total < 1000 OR deaths_total > 5000;
