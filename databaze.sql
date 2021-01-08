@@ -181,3 +181,22 @@ WHERE name LIKE "%republic%";
 
 SELECT * FROM countries
 WHERE name LIKE "%ra%";
+
+/* 08.01.2021 */
+
+INSERT INTO `students` (`id_students`, `firstname`, `lastname`, `class`, `email`) VALUES
+(1,	'Martin',	'Lédl',	'2.C',	'martin.ledl@student.ossp.cz'),
+(2,	'Sorin',	'Eni',	'2.C',	'sorin.eni@student.ossp.cz'),
+(3,	'Karel',	'Nakládal',	'2.C',	'karel.nakladal@student.ossp.cz'),
+(4,	'Jakub',	'Vavrů',	'2.C',	'jakub.vavru@student.ossp.cz'),
+(5,	'Jan',	'Šlechta',	'2.C',	'jan.slechta@student.ossp.cz'),
+(6,	'Štěpán',	'Kolarovský',	'2.C',	'stepan.kolarovsky@student.ossp.cz'),
+(7,	'Michal',	'Plaček',	'2.C',	'michal.placek@student.ossp.cz'),
+(8,	'Šimon',	'Siksta',	'2.C',	'simon.siksta@student.ossp.cz');
+
+INSERT INTO `teachers` (`id_teacher`, `firstname`, `lastname`, `email`, `description`) VALUES
+(1,	'Lenka',	'Sklenářová',	'lenka.sklenarova@ossp.cz',	''),
+(2,	'Lukáš',	'Jakoubek',	'lukas.jakoubek@ossp.cz',	''),
+(3,	'Dana ',	'Kašparová',	'dana.kasparova@ossp.cz',	''),
+(4,	'Iva',	'Součková',	'iva.souckova@ossp.cz',	''),
+(5,	'Martin',	'Kokeš',	'martin.kokes@student.ossp.cz',	'');
