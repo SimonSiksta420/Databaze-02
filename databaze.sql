@@ -200,3 +200,30 @@ INSERT INTO `teachers` (`id_teacher`, `firstname`, `lastname`, `email`, `descrip
 (3,	'Dana ',	'Kašparová',	'dana.kasparova@ossp.cz',	''),
 (4,	'Iva',	'Součková',	'iva.souckova@ossp.cz',	''),
 (5,	'Martin',	'Kokeš',	'martin.kokes@student.ossp.cz',	'');
+
+/* 24.01.2021 */
+
+CREATE TABLE subjects (
+  id_subject int AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  description text,
+  PRIMARY KEY (id_subject)
+);
+
+ALTER TABLE subjects ADD shortname varchar(10);
+
+INSERT INTO subjects 
+VALUES( null, "Anime", "Jap", "Sain gengo wa yoidesu" 
+);
+
+INSERT INTO `subjects` (`id_subject`, `name`, `shortname`, `description`) VALUES
+(1,	'Matematika',	'M',	'1+1=2 easy math'),
+(2,	'English',	'En',	'Pidaras'),
+(3,	'Anime',	'Jap',	'Sain gengo wa yoidesu'),
+(4,	'German',	'Ger',	'Mein Leben'),
+(5,	'Mongolia',	'Mon',	'Chingis khaan bol mash sain tsergiin udirdagch yum'),
+(6,	'Walter',	'White',	'Jesse we need to fuck'),
+(7,	'Jesse',	'Pinkman',	'No don\'t do that old man'),
+(8,	'Gustavo',	'Fring',	'Cook meth Waltar or i will delete your steam account.'),
+(9,	'Bellman',	'Ring',	'Ring Ring Ring Ring Ring Ring Ring Ring Ring Ring'),
+(10,	'Boris',	'Johnson',	'Bri\'ish');
