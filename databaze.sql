@@ -212,6 +212,10 @@ CREATE TABLE subjects (
 
 ALTER TABLE subjects ADD shortname varchar(10);
 
+UPDATE subjects
+SET shortname='M'
+WHERE id_subject='1';
+
 INSERT INTO subjects 
 VALUES( null, "Anime", "Jap", "Sain gengo wa yoidesu" 
 );
