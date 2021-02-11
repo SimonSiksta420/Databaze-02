@@ -235,3 +235,23 @@ INSERT INTO `subjects` (`id_subject`, `name`, `shortname`, `description`) VALUES
 
 /* 11.02.2021 */
 
+CREATE TABLE classrooms (
+  id_classroom varchar(255),
+  building smallint,
+  seat_count int,
+  computer_lab tinyint,
+  description text
+);
+
+
+INSERT INTO `classrooms` (`id_classroom`, `building`, `seat_count`, `computer_lab`, `description`) VALUES
+('1A',	1,	20,	0,	'niggachan'),
+('2B',	2,	25,	0,	'kiruychan'),
+('3C',	1,	30,	0,	'cikamchan'),
+('4D',	2,	40,	0,	'gorosan'),
+('5E',	1,	55,	1,	'earthchan'),
+('6F',	2,	68,	1,	'girlfriendchan'),
+('7G',	1,	69,	0,	'friendchan'),
+('8H',	2,	48,	1,	'niggerchan'),
+('9CH',	1,	41,	1,	'pedochan'),
+('10I',	2,	46,	1,	'groomerchan');
