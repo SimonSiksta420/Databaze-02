@@ -226,4 +226,4 @@ INSERT INTO `subjects` (`id_subject`, `name`, `shortname`, `description`) VALUES
 (7,	'Jesse',	'Pinkman',	'No don\'t do that old man'),
 (8,	'Gustavo',	'Fring',	'Cook meth Waltar or i will delete your steam account.'),
 (9,	'Bellman',	'Ring',	'Ring Ring Ring Ring Ring Ring Ring Ring Ring Ring'),
-(10,	'Boris',	'Johnson',	'Bri\'ish');
+(10,	'Boris',	'Johnson',	'Briish');
