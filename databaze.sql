@@ -227,7 +227,7 @@ INSERT INTO `subjects` (`id_subject`, `name`, `shortname`, `description`) VALUES
 (4,	'German',	'Ger',	'Mein Leben'),
 (5,	'Mongolia',	'Mon',	'Chingis khaan bol mash sain tsergiin udirdagch yum'),
 (6,	'Walter',	'White',	'Jesse we need to fuck'),
-(7,	'Jesse',	'Pinkman',	'No don\'t do that old man'),
+(7,	'Jesse',	'Pinkman',	'No dont do that old man'),
 (8,	'Gustavo',	'Fring',	'Cook meth Waltar or i will delete your steam account.'),
 (9,	'Bellman',	'Ring',	'Ring Ring Ring Ring Ring Ring Ring Ring Ring Ring'),
 (10,	'Boris',	'Johnson',	'Briish');
@@ -255,3 +255,8 @@ INSERT INTO `classrooms` (`id_classroom`, `building`, `seat_count`, `computer_la
 ('8H',	2,	48,	1,	'niggerchan'),
 ('9CH',	1,	41,	1,	'pedochan'),
 ('10I',	2,	46,	1,	'groomerchan');
+
+/* 24.02.2021 */
+
+ALTER TABLE classrooms
+ADD UNIQUE (id_classroom);
