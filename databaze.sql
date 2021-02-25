@@ -270,7 +270,6 @@ lesson_number int,
 day_of_week tinyint); 
 
 ALTER TABLE schedule
-ADD UNIQUE (id_schedule)
 ADD UNIQUE (id_classroom)
 ADD UNIQUE id_teacher)
 ADD UNIQUE (id_subject);
