@@ -260,3 +260,21 @@ INSERT INTO `classrooms` (`id_classroom`, `building`, `seat_count`, `computer_la
 
 ALTER TABLE classrooms
 ADD UNIQUE (id_classroom);
+
+CREATE TABLE schedule(
+id_schedule int primary key,
+id_classroom int,
+id_teacher int,
+id_subject int,
+lesson_number int,
+day_of_week tinyint); 
+
+ALTER TABLE schedule
+ADD UNIQUE (id_schedule)
+ADD UNIQUE (id_classroom)
+ADD UNIQUE id_teacher)
+ADD UNIQUE (id_subject);
+
+
+INSERT INTO schedule (id_schedule, id_classroom, id_teacher, id_subject, lesson_number, day_of_week)
+VALUES ("1", "1", "1", "1", "1", "1")
