@@ -270,11 +270,9 @@ lesson_number int,
 day_of_week tinyint); 
 
 ALTER TABLE schedule
-ADD UNIQUE (id_classroom);
-
-ADD UNIQUE (id_teacher);
-
-ADD UNIQUE (id_subject);
+ADD FOREIGN KEY (id_classroom) REFERENCES classroom(number),
+ADD FOREIGN KEY (id_teacher) REFERENCES teachers(firstname),
+ADD FOREIGN KEY (id_subject) REFERENCES subjects(name),
 
 
 INSERT INTO schedule (id_schedule, id_classroom, id_teacher, id_subject, lesson_number, day_of_week)
