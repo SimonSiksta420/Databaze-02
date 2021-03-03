@@ -277,3 +277,8 @@ ADD FOREIGN KEY (id_subject) REFERENCES subjects(name),
 
 INSERT INTO schedule (id_schedule, id_classroom, id_teacher, id_subject, lesson_number, day_of_week)
 VALUES ("1", "1", "1", "1", "1", "1")
+
+/* 03.03.2021 */
+
+ALTER TABLE students
+ADD UNIQUE (email);
